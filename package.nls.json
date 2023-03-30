@@ -1,0 +1,8 @@
+{
+  "command.gvn.setAPIKey": "GVN: Set OpenAI API Key",
+  "command.gvn.clearAPIKey": "GVN: Clear OpenAI API Key",
+  "command.gvn.changeVariableFormat": "GVN: Change the format for variable names",
+  "command.gvn.generateVariableName": "GVN: Generate Variable Name by ChatGPT",
+  "command.gvn.generateFunctionName": "GVN: Generate Function Name by ChatGPT",
+  "gvn.variableNameFormat.description": "Choose the format for variable names."
+}

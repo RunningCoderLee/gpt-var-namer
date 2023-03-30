@@ -1,0 +1,9 @@
+{
+  "command.gvn.setAPIKey": "GVN: 设置 OpenAI API Key",
+  "command.gvn.clearAPIKey": "GVN: 清除 OpenAI API Key",
+  "command.gvn.changeVariableFormat": "GVN: 改变变量名格式",
+  "command.gvn.generateVariableName": "GVN: 通过 ChatGPT 生成变量名",
+  "command.gvn.generateFunctionName": "GVN: 通过 ChatGPT 生成函数名",
+  "command.gvn.chooseVariableFormat": "GVN: 选择生成后的变量名格式。",
+  "gvn.variableNameFormat.description": "选择生成后的变量名格式。"
+}

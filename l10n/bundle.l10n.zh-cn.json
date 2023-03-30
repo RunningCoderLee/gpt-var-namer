@@ -1,0 +1,15 @@
+{
+  "Select the variable name format (workspace):": "选择变量名格式（工作区）：",
+  "Select a workspace folder:": "选择工作区文件夹：",
+  "Delete API Key success": "成功删除 API Key",
+  "Enter a description for the function:": "输入函数的含义：",
+  "Generating function names...": "函数名创建中...",
+  "Select a function name:": "选择一个函数名：",
+  "Failed to generate function names.": "函数名称创建失败。",
+  "Enter a description for the variable:": "输入变量的含义：",
+  "Generating variable names...": "变量名创建中...",
+  "Select a variable name:": "选择变量名：",
+  "Failed to generate variable names.": "变量名称创建失败。",
+  "OpenAI API key saved.": "OpenAI API key 保存成功。",
+  "Please enter your OpenAI API key. [Get your API Key from OpenAI]({ url }).You can clear your API key by command: `GVN: Clear API Key`": "请输入你的 OpenAI API key。 [从 OpenAI 获取你的 API key]({url})。 你可以通过命令：`GVN: Clear API Key` 来清除你的 API key"
+}

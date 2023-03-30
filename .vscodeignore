@@ -1,0 +1,16 @@
+.vscode/**
+.vscode-test/**
+src/**
+out/test/**
+.gitignore
+.yarnrc
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/.eslintrcjs
+**/tsconfig.eslint.json
+**/*.map
+**/*.ts
+**/LICENSE
+pnpm-lock.yaml
+.prettierrc
+.prettierignore

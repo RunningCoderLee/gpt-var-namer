@@ -1,0 +1,15 @@
+{
+  "Select the variable name format (workspace):": "Select the variable name format (workspace):",
+  "Select a workspace folder:": "Select a workspace folder:",
+  "Delete API Key success": "Delete API Key success",
+  "Enter a description for the function:": "Enter a description for the function:",
+  "Generating function names...": "Generating function names...",
+  "Select a function name:": "Select a function name:",
+  "Failed to generate function names.": "Failed to generate function names.",
+  "Enter a description for the variable:": "Enter a description for the variable:",
+  "Generating variable names...": "Generating variable names...",
+  "Select a variable name:": "Select a variable name:",
+  "Failed to generate variable names.": "Failed to generate variable names.",
+  "OpenAI API key saved.": "OpenAI API key saved.",
+  "Please enter your OpenAI API key. [Get your API Key from OpenAI]({ url }).You can clear your API key by command: `GVN: Clear API Key`": "Please enter your OpenAI API key. [Get your API Key from OpenAI]({ url }).You can clear your API key by command: `GVN: Clear API Key`"
+}

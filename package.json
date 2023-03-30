@@ -1,0 +1,107 @@
+{
+  "name": "gpt-var-namer",
+  "displayName": "ChatGPT Var Namer",
+  "icon": "images/icon.png",
+  "description": "Generate variable names using the OpenAI GPT-3 API",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/RunningCoderLee/gpt-var-namer",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/RunningCoderLee/gpt-var-namer/issues"
+  },
+  "author": {
+    "name": "RunningCoderLee"
+  },
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "l10n": "./l10n",
+  "publisher": "runningcoder",
+  "contributes": {
+    "configuration": {
+      "title": "ChatGPT Var Namer",
+      "properties": {
+        "GVN.variableNameFormat": {
+          "type": "string",
+          "enum": [
+            "camelCase",
+            "PascalCase",
+            "kebab-case",
+            "snake_case"
+          ],
+          "default": "camelCase",
+          "description": "%gvn.variableNameFormat.description%",
+          "scope": "resource"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "gvn.setAPIKey",
+        "title": "%command.gvn.setAPIKey%"
+      },
+      {
+        "command": "gvn.clearAPIKey",
+        "title": "%command.gvn.clearAPIKey%"
+      },
+      {
+        "command": "gvn.changeVariableFormat",
+        "title": "%command.gvn.changeVariableFormat%"
+      },
+      {
+        "command": "gvn.generateVariableName",
+        "title": "%command.gvn.generateVariableName%"
+      },
+      {
+        "command": "gvn.generateFunctionName",
+        "title": "%command.gvn.generateFunctionName%"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm esbuild-base --minify",
+    "preesbuild-base": "rimraf out",
+    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+    "esbuild-test": "rimraf out/test && esbuild ./src/test/runTest.ts --bundle --outfile=out/test/runTest.js --external:vscode --format=cjs --platform=node",
+    "watch": "pnpm esbuild-base --sourcemap --watch",
+    "test-watch": "pnpm esbuild-test --sourcemap --watch",
+    "build": "pnpm esbuild-base --sourcemap",
+    "pretest": "pnpm build && pnpm lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "l10n": "vscode-l10n-dev export ./src",
+    "package": "pnpm vsce package --no-dependencies",
+    "publish": "pnpm vsce publish --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.76.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@vscode/l10n": "^0.0.11",
+    "@vscode/l10n-dev": "^0.0.23",
+    "@vscode/test-electron": "^2.3.0",
+    "@vscode/vsce": "^2.18.0",
+    "esbuild": "^0.17.14",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "openai": "^3.2.1"
+  }
+}
